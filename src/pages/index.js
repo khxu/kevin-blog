@@ -40,10 +40,12 @@ class BlogIndex extends React.Component {
 									}}
 								/>
 								{node.frontmatter.coverImage ? (
-									<Image
-										style={{ maxWidth: '300px' }}
-										fluid={node.frontmatter.coverImage.childImageSharp.fluid}
-									/>
+									<Link to={node.fields.slug}>
+										<Image
+											style={{ maxWidth: '300px' }}
+											fluid={node.frontmatter.coverImage.childImageSharp.fluid}
+										/>
+									</Link>
 								) : null}
 							</section>
 						</article>

@@ -42,7 +42,7 @@ class BlogIndex extends React.Component {
 								{node.frontmatter.coverImage ? (
 									<Link to={node.fields.slug}>
 										<Image
-											style={{ maxWidth: '300px' }}
+											style={{ maxWidth: '500px' }}
 											fluid={node.frontmatter.coverImage.childImageSharp.fluid}
 										/>
 									</Link>
@@ -78,7 +78,7 @@ export const pageQuery = graphql`
 						description
 						coverImage {
 							childImageSharp {
-								fluid(maxWidth: 400) {
+								fluid(maxWidth: 500) {
 									...GatsbyImageSharpFluid
 								}
 							}

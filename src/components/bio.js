@@ -54,13 +54,17 @@ const Bio = () => {
 					borderRadius: `50%`
 				}}
 			/>
-			<p>
-				Written by <strong>{author}</strong> who tries to help others and occasionally succeeds.
-				{` `}
-				<a href={`https://github.com/${social.github}`}>Github</a>
-				{` `}
-				<a href={`https://observablehq.com/${social.observable}`}>Observable</a>
-			</p>
+			<div>
+				<div>
+					Written by <strong>{author}</strong> who tries to help others and occasionally succeeds.
+				</div>
+				<div>
+					<a href={`https://github.com/${social.github}`}>Github</a>
+					{` `}
+					<a href={`https://observablehq.com/${social.observable}`}>Observable</a>
+				</div>
+			</div>
+
 		</div>
 	);
 };

@@ -7,7 +7,7 @@ Wordpress2016.overrideThemeStyles = () => {
       boxShadow: `none`,
     },
     "body,h1,h2,h3,h4": {
-      fontFamily: ["Lora", "serif"].join(",")
+      fontFamily: ["Source Sans Pro", "sans serif"].join(",")
     },
     "a": {
       color: "black"

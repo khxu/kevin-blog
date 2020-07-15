@@ -11,6 +11,12 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     "a": {
       color: "black"
+    },
+    "li": {
+      marginBottom: 0
+    },
+    "ul, ol": {
+      paddingLeft: '2em'
     }
   }
 }

@@ -1,3 +1,7 @@
-.blog-post + .blog-post {
-  margin-left: 1.5em;
+.blog-post {
+  transition: all ease-in 150ms;
+}
+
+.blog-post:hover {
+  box-shadow: 0 0 4px lightgray;
 }

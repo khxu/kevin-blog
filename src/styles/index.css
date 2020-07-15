@@ -1,0 +1,3 @@
+.blog-post + .blog-post {
+  margin-left: 1.5em;
+}

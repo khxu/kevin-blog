@@ -1,5 +1,6 @@
 .blog-post {
   transition: all ease-in 150ms;
+  border-radius: 5px;
 }
 
 .blog-post:hover {

@@ -21,36 +21,34 @@ class BlogIndex extends React.Component {
 					{posts.map(({ node }) => {
 						const title = node.frontmatter.title || node.fields.slug;
 						return (
-							<article key={node.fields.slug} style={{ maxWidth: '300px', padding: '1.5em' }} className='blog-post'>
-								<header>
-									<h3
-										style={{
-											marginBottom: rhythm(1 / 4),
-											marginTop: 0
-										}}
-									>
-										<Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+							<Link key={node.fields.slug} to={node.fields.slug} style={{ boxShadow: 'none' }}>
+								<article style={{ maxWidth: '300px', padding: '1.5em' }} className='blog-post'>
+									<header>
+										<h3
+											style={{
+												marginBottom: rhythm(1 / 4),
+												marginTop: 0
+											}}
+										>
 											{title}
-										</Link>
-									</h3>
-									<small>{node.frontmatter.date}</small>
-								</header>
-								<section>
-									<p
-										dangerouslySetInnerHTML={{
-											__html: node.frontmatter.description || node.excerpt
-										}}
-									/>
-									{node.frontmatter.coverImage ? (
-										<Link to={node.fields.slug}>
+										</h3>
+										<small>{node.frontmatter.date}</small>
+									</header>
+									<section>
+										<p
+											dangerouslySetInnerHTML={{
+												__html: node.frontmatter.description || node.excerpt
+											}}
+										/>
+										{node.frontmatter.coverImage ? (
 											<Image
-												style={{ maxWidth: '500px' }}
+												style={{ maxWidth: '300px' }}
 												fluid={node.frontmatter.coverImage.childImageSharp.fluid}
 											/>
-										</Link>
-									) : null}
-								</section>
-							</article>
+										) : null}
+									</section>
+								</article>
+							</Link>
 						);
 					})}
 				</div>

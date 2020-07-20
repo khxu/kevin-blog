@@ -54,7 +54,20 @@ class Layout extends React.Component {
 			>
 				<header>{header}</header>
 				<main>{children}</main>
-				<footer />
+				<footer style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+					{
+						location.pathname === rootPath
+							? <div>
+								<a href="https://github.com/khxu">GitHub</a>
+								{` `}
+								<a href="https://observablehq.com/@khxu">Observable</a>
+								{` `}
+								<a href="https://www.linkedin.com/in/kevin-hanjie-xu/">LinkedIn</a>
+							</div>
+							: null
+					}
+					<div><Link to='/terms'>Terms</Link> <Link to='/privacy'>Privacy</Link></div>
+				</footer>
 			</div>
 		);
 	}

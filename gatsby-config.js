@@ -6,7 +6,8 @@ module.exports = {
 		siteUrl: `https://kevinhxu.com/`,
 		social: {
 			github: `khxu`,
-			observable: `@khxu`
+			observable: `@khxu`,
+			linkedin: `kevin-hanjie-xu`
 		}
 	},
 	plugins: [
@@ -31,7 +32,7 @@ module.exports = {
 					{
 						resolve: `gatsby-remark-images`,
 						options: {
-							maxWidth: 1080
+							maxWidth: 800
 						}
 					},
 					{
@@ -48,12 +49,6 @@ module.exports = {
 		},
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
-		{
-			resolve: `gatsby-plugin-google-analytics`,
-			options: {
-				//trackingId: `ADD YOUR TRACKING ID HERE`,
-			}
-		},
 		`gatsby-plugin-feed`,
 		{
 			resolve: `gatsby-plugin-manifest`,

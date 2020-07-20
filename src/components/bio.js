@@ -27,6 +27,7 @@ const Bio = () => {
 					social {
 						github
 						observable
+						linkedin
 					}
 				}
 			}
@@ -62,6 +63,8 @@ const Bio = () => {
 					<a href={`https://github.com/${social.github}`}>Github</a>
 					{` `}
 					<a href={`https://observablehq.com/${social.observable}`}>Observable</a>
+					{` `}
+					<a href={`https://www.linkedin.com/in/${social.linkedin}`}>LinkedIn</a>
 				</div>
 			</div>
 

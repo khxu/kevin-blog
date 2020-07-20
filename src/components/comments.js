@@ -8,6 +8,10 @@ import CommentsComposer from './commentsComposer';
 import CommentsList from './commentsList';
 
 const Comments = ({ location }) => {
+  if (typeof window === 'undefined') {
+    return null;
+  }
+
   const magic = new Magic('pk_live_D23A28869744AF1F');
   const { user } = useAuth();
   const [email, setEmail] = useState('');

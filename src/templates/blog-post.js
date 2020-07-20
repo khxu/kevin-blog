@@ -48,7 +48,7 @@ class BlogPostTemplate extends React.Component {
           <footer>
             <Bio />
             {
-              typeof window === 'undefined'
+              typeof window !== 'undefined'
                 ? <Comments location={this.props.location} />
                 : null
             }

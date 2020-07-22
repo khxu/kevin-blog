@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { adjectives, colors, animals, uniqueNamesGenerator } from 'unique-names-generator';
 import firebase from '../utils/firebase';
+import * as tf from '@tensorflow/tfjs-core';
+import '@tensorflow/tfjs-backend-cpu';
 import * as toxicity from '@tensorflow-models/toxicity';
-import * as tf from '@tensorflow/tfjs';
 
 const CommentsComposer = ({ user, handleLogout, page }) => {
   const [comment, setComment] = useState('');

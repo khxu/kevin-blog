@@ -10,6 +10,7 @@
   "dependencies": {
     "@tensorflow-models/toxicity": "^1.2.2",
     "@tensorflow/tfjs-backend-cpu": "^2.0.1",
+    "@tensorflow/tfjs-converter": "^2.0.1",
     "@tensorflow/tfjs-core": "^2.0.1",
     "firebase": "^7.16.1",
     "gatsby": "^2.24.8",
@@ -43,6 +44,7 @@
     "unique-names-generator": "^4.3.0"
   },
   "devDependencies": {
+    "babel-preset-gatsby": "^0.5.3",
     "prettier": "^2.0.5"
   },
   "homepage": "https://github.com/khxu",

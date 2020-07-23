@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { adjectives, colors, animals, uniqueNamesGenerator } from 'unique-names-generator';
 import firebase from '../utils/firebase';
-import * as tf from '@tensorflow/tfjs-core';
 import '@tensorflow/tfjs-backend-cpu';
 import * as toxicity from '@tensorflow-models/toxicity';
 
@@ -68,7 +67,10 @@ const CommentsComposer = ({ user, handleLogout, page }) => {
           type="text"
           id="displayName"
           value={displayName}
-          onChange={(e) => setDisplayName(e.target.value)}
+          onChange={(e) => {
+            setDisplayNamePredictions([]);
+            setDisplayName(e.target.value)
+          }}
         />
         {
           displayNamePredictions.length

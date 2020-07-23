@@ -19,7 +19,7 @@ const Privacy = ({ location }) => {
       <SEO title="Privacy" />
       <div>
         <h1 style={{ textAlign: 'center' }}>Privacy</h1>
-        <p><i>Last updated: July 19, 2020</i></p>
+        <p><i>Last updated: July 22, 2020</i></p>
         <h2>What Information Does This Site Collect?</h2>
         <h3>Email Address</h3>
         <p>
@@ -27,7 +27,7 @@ const Privacy = ({ location }) => {
         </p>
         <h3>User Submitted Content</h3>
         <h4>Comments</h4>
-        <p>If you submit a comment, I'll know what your comment says, and so will everyone else who visits the page, because they're public comments. If you don't want your comment displayed, please either delete your comment, or don't submit one in the first place.</p>
+        <p>If you submit a comment (and you get past the text toxicity filter), I'll know what your comment says, and so will everyone else who visits the page, because they're public comments. If you don't want your comment displayed, please either delete your comment, or don't submit one in the first place.</p>
         <h3>Analytics (e.g., Google Analytics)</h3>
         <p>I don't use any analytics tools on this site.</p>
         <h2>What Will You Do With This Information?</h2>

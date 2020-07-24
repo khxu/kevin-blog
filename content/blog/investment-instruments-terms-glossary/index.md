@@ -2,6 +2,7 @@
 title: Investment Instruments Terms Glossary
 date: "2019-12-29T03:37:55.067Z"
 coverImage: "investmentInstrumentsVis.png"
+description: A terms glossary for early stage investment instruments (with data visualizations)
 ---
 It's a tough road for early stage startups raising funding from investors. The legalese contained in the instruments themselves (e.g., convertible notes, [SAFEs](https://www.ycombinator.com/documents/#safe), [KISSes](https://500.co/kiss/), etc.) don't make things any easier.
 

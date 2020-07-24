@@ -37,7 +37,7 @@ class BlogIndex extends React.Component {
 									<section>
 										<p
 											dangerouslySetInnerHTML={{
-												__html: node.frontmatter.description || node.excerpt
+												__html: node.excerpt
 											}}
 										/>
 										{node.frontmatter.coverImage ? (

@@ -2,7 +2,7 @@
 title: MicroSD Connector Footprint
 date: "2020-07-17T02:46:04.017Z"
 coverImage: "molexMicrosdFootprint.png"
-description: "I'm working on an embedded project that requires a microSD card for storing data. After doing some"
+description: Molex microSD connector KiCad footprint
 ---
 ![KiCad footprint of a Molex microSD connector](./molexMicrosdFootprint.png)
 

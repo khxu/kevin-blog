@@ -2,6 +2,7 @@
 title: Comments System
 date: "2020-07-23T19:47:06.610Z"
 coverImage: "toxicComment.png"
+description: An adventure in implementing a comments system for a Gatsby blog using Cloud Firestore, Magic, and TensorFlow.js
 ---
 We've got a comments system! Sure, my wife's the only other person who reads this blog (hi honey!), but I was curious about how I might implement comments, so here we are.
 

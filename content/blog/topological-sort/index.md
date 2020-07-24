@@ -2,6 +2,7 @@
 title: Topological Sort
 date: "2020-07-15T02:46:04.017Z"
 coverImage: "topologicalSort.png"
+description: Topological sort using JavaScript without classes.
 ---
 Putting stuff in the right order is hard. For example, say you want to start blogging regularly as a way to document your thought process. Here are steps you could take:
 

@@ -37,6 +37,8 @@ From this section, we can tell that the copper pad for G1 needs to be a 1.05mm x
 
 I haven't received the physical parts yet, so I can't check whether they actually fit, but will update when I do. The footprint seems to align nicely with the 3D model, though, so I'm hopeful.
 
+*Update 8/3/2020: Got the connector soldered onto the PCB and it fits perfectly on the pads. 👍*
+
 ## Next Steps
 
 There has to be a way to automate this process. Dimensioned drawings from datasheets are drawn to scale. We should be able to extract the pads along with their dimensions (computer vision?) and output KiCad footprint files.

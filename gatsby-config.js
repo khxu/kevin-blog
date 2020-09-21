@@ -43,7 +43,36 @@ module.exports = {
 					},
 					`gatsby-remark-prismjs`,
 					`gatsby-remark-copy-linked-files`,
-					`gatsby-remark-smartypants`
+					`gatsby-remark-smartypants`,
+					{
+						resolve: `gatsby-remark-embedder`,
+						options: {
+							customTransformers: [
+								{
+									getHTML: (url) => `<iframe
+										height="400px"
+										width="100%"
+										src="${url}?lite=true"
+										scrolling="no"
+										frameborder="no"
+										allowtransparency="true"
+										allowfullscreen="true"
+										sandbox="allow-forms
+										allow-pointer-lock
+										allow-popups
+										allow-same-origin
+										allow-scripts
+										allow-modals"
+										></iframe>`,
+									name: 'replit',
+									shouldTransform: (url) => /repl\.it/.test(url)
+								}
+							],
+							services: {
+								replit: {}
+							},
+						},
+					}
 				]
 			}
 		},

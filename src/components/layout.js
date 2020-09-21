@@ -54,7 +54,7 @@ class Layout extends React.Component {
 			>
 				<header>{header}</header>
 				<main>{children}</main>
-				<footer style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+				<footer style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', marginTop: rhythm(1.5) }}>
 					{
 						location.pathname === rootPath
 							? <div>

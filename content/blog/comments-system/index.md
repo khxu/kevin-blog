@@ -61,7 +61,7 @@ Building the JavaScript bundles for production was another story. I went on the 
 
 For some reason, Babel's `classCallCheck` throws an error within `tensor.js` -- I'm guessing there's a function in there that doesn't comply with the ES6 class spec. On the off-chance that I can save any of you some time: the way to exclude a package from Babel transpilation in a Gatsby site is to customize the Webpack config: https://www.gatsbyjs.org/docs/add-custom-webpack-config/. Specifically, here's my exclude function:
 
-```
+```javascript
 exclude: modulePath => !(/node_modules\/@tensorflow/.test(modulePath))
 ```
 
